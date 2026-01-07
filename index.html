@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Welcome Calculator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== USER INPUT SECTION ===== -->
+    <section id="inputSection">
+        <h2>Enter Your Details</h2>
+        <input type="text" id="userName" placeholder="Enter your name">
+        <input type="date" id="dob" required>
+        <button id="startBtn">Start</button>
+    </section>
+
+    <!-- ===== WELCOME & COUNTDOWN SECTION ===== -->
+    <section id="welcomeSection" class="hidden">
+        <h2 id="welcomeMsg"></h2>
+        <div id="countdown">3</div>
+    </section>
+
+    <!-- ===== AGE COUNTER SECTION ===== -->
+    <section id="ageSection" class="hidden">
+        <h2>Your Live Age</h2>
+
+        <div class="age-box">
+            <p>Years: <span id="years">0</span></p>
+            <p>Days: <span id="days">0</span></p>
+            <p>Hours: <span id="hours">0</span></p>
+            <p>Minutes: <span id="minutes">0</span></p>
+            <p>Seconds: <span id="seconds">0</span></p>
+        </div>
+    </section>
+
+    <!-- ===== CALCULATOR SECTION ===== -->
+    <section id="calculatorSection" class="hidden">
+        <h2>Simple Calculator</h2>
+
+        <input type="text" id="calcDisplay" readonly>
+
+        <div class="calculator">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+
+            <button>0</button>
+            <button>C</button>
+            <button>=</button>
+            <button>+</button>
+        </div>
+    </section>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

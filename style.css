@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+/* ===== CARD SECTIONS ===== */
+section {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 25px;
+    margin: 20px 0;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #cbd5f5;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    padding: 12px;
+    width: 100%;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.5);
+}
+
+/* ===== COUNTDOWN ===== */
+#countdown {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #22d3ee;
+    animation: pulse 1s infinite;
+}
+
+/* ===== AGE COUNTER ===== */
+.age-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.age-box p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* ===== CALCULATOR ===== */
+#calcDisplay {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.calculator button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #e5e7eb;
+}
+
+.calculator button:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+/* .hidden {
+    display: none;
+} */
